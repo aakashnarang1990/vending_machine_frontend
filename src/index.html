@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+header{
+margin-bottom:30px;
+}
+
+.header{
+  display:flex;
+  align-item:center;
+}
+
+.btn{
+  margin-right:15px;
+  border:1px solid blue;
+  color:blue;
+  background:#fff;
+  padding:7.5px 15px;
+  border-radius:4px;
+}
+.container{
+  border:1px solid blue;
+  padding:5px;
+  margin:5px 0px;
+    border-radius:4px;
+  display:flex;
+}
+
+.box{
+   border:1px solid blue;
+  padding:5px;
+  margin:5px 0px;
+   border-radius:4px;
+  margin-right:5px;
+}
+p{
+  margin:0px 0px 5px 0px;
+}
+ul > li {
+  display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+    zoom:1;
+    *display:inline;
+    /* this fix is needed for IE7- */
+}
+</style>
+</head>
+<body>
+<header>
+<div>State : <label id="label-state"></label></div>
+<div>Message : <label id="label-message"></label></div>
+<div>Amount : <label id="label-amount"></label></div>
+</header>
+<div class="header">
+  <button class="btn_cancel_transaction">Cancel Transaction</button>
+</div>
+<div class="container">
+  <legend>Currency:</legend>
+  <ul class="currency__list">
+  <li><div class="box">
+    <p>Rs. 10</p>
+     <button class="btn_insert_currency" onclick="insertCurrency(10)">Add</button>
+  </div></li>
+  <li><div class="box">
+    <p>Rs. 20</p>
+     <button class="btn_insert_currency" onclick="insertCurrency(20)">Add</button>
+  </div></li>
+  <li><div class="box">
+    <p>Rs. 50</p>
+     <button class="btn_insert_currency" onclick="insertCurrency(50)">Add</button>
+  </div></li>
+  <li><div class="box">
+    <p>Rs. 100</p>
+     <button class="btn_insert_currency" onclick="insertCurrency(100)">Add</button>
+  </div></li>
+  </ul>
+  
+</div>
+
+<div class="container user_products_container">
+  <legend>Products:</legend>
+  <ul class="products__list">
+    <!--
+    <li>
+        <a class="results__link results__link--active" href="#23456">
+            <figure class="results__fig">
+                <img src="img/test-1.jpg" alt="Test">
+            </figure>
+            <div class="results__data">
+                <h4 class="results__name">Pasta with Tomato ...</h4>
+                <p class="results__author">The Pioneer Woman</p>
+            </div>
+        </a>
+    </li>
+    -->
+  </ul>
+</div>
+
+<br>
+<h3>Admin Section</h3>
+<div class="container admin_products_container">
+  <legend>Products Add Section:</legend>
+  <ul class="admin_products__list">
+    <!--
+    <li>
+        <a class="results__link results__link--active" href="#23456">
+            <figure class="results__fig">
+                <img src="img/test-1.jpg" alt="Test">
+            </figure>
+            <div class="results__data">
+                <h4 class="results__name">Pasta with Tomato ...</h4>
+                <p class="results__author">The Pioneer Woman</p>
+            </div>
+        </a>
+    </li>
+    -->
+  </ul>
+</div>
+
+<div class="container admin_products_container">
+  <legend>Amount Withdraw Section:</legend>
+  <br>
+  <div class="box product-box">
+    <p>Total Available Amount: <label id='label_total_amount'></label></p>
+    <p>Withdarw: <input type="text" id="input-amount-witdraw" name="amount-withdraw" ></p>
+    <br>
+    <button class="btn-withdraw">Withdraw</button>
+</div>
+</div>
+
+
+</body>
+</html>

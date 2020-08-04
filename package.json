@@ -1,0 +1,23 @@
+{
+  "name": "vending_machine",
+  "version": "1.0.0",
+  "description": "basic vending machine",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "prod": "webpack --mod production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "author": "Aakash Narang",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "es6-template-strings": "^2.0.1"
+  }
+}
