@@ -1,6 +1,6 @@
 # vending_machine_frontend
 
-steps:
+### steps:
 
-1. npm install
-2. npm run start
+* npm install
+* npm run start
